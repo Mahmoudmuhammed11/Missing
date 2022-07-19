@@ -21,7 +21,7 @@
 
 <body >
     <!-- header section -->
-    <header class="nav-bg-color text-white w-100 sticky-top">
+    <header class="nav-bg-color text-white w-100 fixed-top">
         <nav class="navbar navbar-expand-lg">
             <a href="index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white logo-link"
                 style="text-decoration: none">
@@ -214,7 +214,7 @@
             </div>
 
             <div class="section">
-                <div class="states-card card-calculator">
+                <div class="states-card card-calculator" ">
                     <div class="card-body">
                         <div class="card-title text-bold foundPersonsCountT">Found Persons</div>
                         <div class="card-text text-muted text-center">
@@ -236,7 +236,9 @@
     <!-- missing people section -->
     <section class="section-people missing" id="missing">
         <h1 class="main-heading LatestMT">Latest missing Cases</h1>
-        <div id="cases-container" class="cases-container"></div>
+        <div id="cases-container" class="cases-container grid">
+            
+        </div>
 
         <button class="custom-btn btn-12">
             <span> <a href="/all-L-people.html" class="text-light">Show All</a></span><span>More</span>
@@ -247,7 +249,7 @@
     <!-- looking-for section -->
     <section class="section-people looking-for-tf" id="looking-for-tf">
         <h1 class="main-heading LatestLT">looking for their families</h1>
-        <div id="fcases-container" class="cases-container"></div>
+        <div id="fcases-container" class="cases-container grid"></div>
         <button class="custom-btn btn-12">
             <span> <a href="/all-F-people.html" class="text-light">Show All</a></span><span>More</span>
         </button>
@@ -256,7 +258,7 @@
 
     <!-- missing people section -->
     <section class="section-people missing" id="missingThings">
-        <h1 class="main-heading LatestMTT">Latest missing Things</h1>
+        <h1 class="main-heading LatestMTT grid">Latest missing Things</h1>
         <div id="things-container" class="cases-container"></div>
 
         <!-- <button class="custom-btn btn-12">
@@ -267,7 +269,7 @@
     <!--End missing people section -->
 
     <!-- footer section -->
-    <footer class="text-center text-white">
+    <footer class="text-center text-white ">
         <!-- Grid container -->
         <div class="container p-2 pb-0">
             <!-- Section: Social media -->
@@ -306,7 +308,7 @@
     <!-- End footer section -->
 
     <!--overlay section -->
-    <div class="overlay center" id="overlay">
+    <div class="overlay center mt-5 " id="overlay">
         <div class="content">
             <button class="btn-clear" id="btn-close-overlay">
                 <i class="icofont-close"></i>

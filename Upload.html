@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <header class="nav-bg-color text-white w-100 sticky-top">
+    <header class="nav-bg-color text-white w-100 fixed-top">
         <nav class="navbar navbar-expand-lg">
             <a href="index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white logo-link"
                 style="text-decoration: none">
@@ -135,7 +135,7 @@
                     <div class="border border-white">
                         <div class="modal-body">
                             <div class="form-row">
-                                <div class="col">
+                                <div class="col-md-2">
                                     <div class="form-group">
                                         <label for="PersonStatus" class="control-label">Status</label>
                                         <div class="form-group">
@@ -147,7 +147,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col">
+                                <div class="col-md-2">
                                     <div class="form-group">
                                         <label for="PersonGender" class="control-label">Gender</label>
                                         <div class="form-group">
@@ -159,7 +159,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col">
+                                <div class="col-md-2">
                                     <div class="form-group">
                                         <label for="Person_Name"> first name </label>
                                         <input type="text" class="form-control caseName" name="personname" />
@@ -167,20 +167,20 @@
                                         <div class="invalid-feedback">Please fill out this field.</div>
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col-md-2">
                                     <div class="form-group">
                                         <label for="Person_Name"> father name </label>
                                         <input type="text" class="form-control caseFName" name="personname" />
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col-md-2">
                                     <div class="form-group">
                                         <label for="Person_Name"> mother name </label>
                                         <input type="text" class="form-control caseMName" name="personname" />
                                     </div>
                                 </div>
 
-                                <div class="col">
+                                <div class="col-md-2">
                                     <div class="form-group">
                                         <label for="Person_Country">Country <i class="fa-solid fa-earth-africa"></i>
                                         </label>
@@ -212,38 +212,38 @@
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="col">
+                                <div class="col-md-2">
                                     <label for="PersonAge">year Of Birth</label>
                                     <input type="text" class="form-control caseYearOfBirth" name="PersonAge" />
                                 </div>
-                                <div class="col">
+                                <div class="col-md-2">
                                     <div class="form-group">
                                         <label for="PersonLocationOfLoss">state <i class="fa-solid fa-location-dot"></i>
                                         </label>
                                         <input type="text" class="form-control caseState" name="PersonLocationOfLoss" />
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col-md-2">
                                     <div class="form-group">
                                         <label for="PersonLocationOfLoss"> city <i class="fa-solid fa-location-dot"></i>
                                         </label>
                                         <input type="text" class="form-control caseCity" name="PersonLocationOfLoss" />
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col-md-2">
                                     <div class="form-group">
                                         <label for="P-phone">Number <i class="fa-brands fa-whatsapp"></i></label>
                                         <input type="tel" class="form-control caseNumber" name="P-phone" />
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col-md-2">
                                     <div class="form-group">
                                         <label for="PersonEmail">Email <i class="fa-solid fa-envelope"></i></label>
                                         <input type="email" class="form-control caseEmail" name="PersonEmail" />
                                     </div>
                                 </div>
 
-                                <div class="col">
+                                <div class="col-md-2">
                                     <div class="form-group">
                                         <label for="dob">Date of loss</label>
                                         <input class="form-control caseDate" type="date" name="dol" />
@@ -251,20 +251,20 @@
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="col">
+                                <div class="col-md-2">
                                     <div class="form-group">
                                         <label for="P-phone">Weight <i class="fa-brands fa-whatsapp"></i></label>
                                         <input type="tel" class="form-control caseWeight" name="P-phone" />
                                     </div>
                                 </div>
 
-                                <div class="col">
+                                <div class="col-md-2">
                                     <div class="form-group">
                                         <label for="P-phone">Height <i class="fa-brands fa-whatsapp"></i></label>
                                         <input type="tel" class="form-control caseHeight" name="P-phone" />
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col-md-8">
                                     <div class="container">
                                         <div class="form-group" x-data="{ fileName: '' }">
                                             <div class="input-group shadow">
@@ -303,7 +303,7 @@
                     <div class="border border-white">
                         <div class="modal-body">
                             <div class="form-row">
-                                <div class="col">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="thingStatus" class="control-label">Status</label>
                                         <div class="form-group">
@@ -315,7 +315,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="thingType" class="control-label">Type</label>
                                         <div class="form-group">
@@ -329,21 +329,59 @@
                                     </div>
                                 </div>
 
-                                <div class="col">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="caseName"> Name </label>
                                         <input type="text" class="form-control caseName" name="caseName" />
                                     </div>
                                 </div>
 
-                                <div class="col">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="caseModel"> Model </label>
                                         <input type="text" class="form-control caseModel" name="caseModel" />
                                     </div>
                                 </div>
 
-                                <div class="col">
+                         
+                            
+                            <div class="form-row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="LocationOfLoss">Location Of Loss <i
+                                                class="fa-solid fa-location-dot"></i> </label>
+                                        <input type="text" class="form-control caseLocation" name="LocationOfLoss" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="P-phone">Phone <i class="fa-brands"></i></label>
+                                        <input type="tel" class="form-control caseNumber" name="P-phone" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="caseNumber"> whatsapp Number <i
+                                                class="fa-brands fa-whatsapp"></i></label>
+                                        <input type="tel" class="form-control caseWnumber" name="caseNumber" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="Messenger">Messenger User Name <i
+                                                class="fa-brands fa-facebook-messenger"></i></label>
+                                        <input type="text" class="form-control caseMessenger" name="P-Email" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="dob">Date of loss</label>
+                                        <input class="form-control caseDate" type="date" name="dol" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="thingsColor" class="control-label">Things Color</label>
                                         <div class="form-group">
@@ -371,46 +409,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="LocationOfLoss">Location Of Loss <i
-                                                class="fa-solid fa-location-dot"></i> </label>
-                                        <input type="text" class="form-control caseLocation" name="LocationOfLoss" />
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="P-phone">Phone <i class="fa-brands"></i></label>
-                                        <input type="tel" class="form-control caseNumber" name="P-phone" />
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="caseNumber"> whatsapp Number <i
-                                                class="fa-brands fa-whatsapp"></i></label>
-                                        <input type="tel" class="form-control caseWnumber" name="caseNumber" />
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="Messenger">Messenger User Name <i
-                                                class="fa-brands fa-facebook-messenger"></i></label>
-                                        <input type="text" class="form-control caseMessenger" name="P-Email" />
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="dob">Date of loss</label>
-                                        <input class="form-control caseDate" type="date" name="dol" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="container">
+                        
+                                <div class="container col-md-6">
                                     <div class="form-group" x-data="{ fileName: '' }">
                                         <div class="input-group shadow">
                                             <span class="input-group-text px-3 text-muted"><i
@@ -426,6 +426,9 @@
                                         </div>
                                     </div>
                                 </div>
+
+                            </div>
+                       
 
                                 <div class="form-row mb-3 d-flex justify-content-center w-100">
                                     <div class="form-floating">

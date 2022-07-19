@@ -312,9 +312,9 @@ if (btn_log_in)
         let html = `<div id="logreg-forms " style="background-color: white; padding:70px 20px; ">
         <form class="form-signin" id="loginForm">
             <h1  class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
-            <div class="social-login d-flex justify-content-around mb-3">
-                <button id="btnSignInWithFacebook" class="btn btn-primary facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f " style="color:white;"></i> Sign in with Facebook</span> </button>
-                <button id="btnSignInWithGoogle" class="btn btn-danger google-btn social-btn " type="button"><span><i class="fab fa-google-plus-g" style="color:white;"></i> Sign in with Google+</span> </button>
+            <div class="social-login row d-flex justify-content-around mb-3">
+                <button id="btnSignInWithFacebook" class="btn btn-primary facebook-btn social-btn col" type="button"><span><i class="fab fa-facebook-f " style="color:white;"></i> Sign in with Facebook</span> </button>
+                <button id="btnSignInWithGoogle" class="btn btn-danger google-btn social-btn  col" type="button"><span><i class="fab fa-google-plus-g" style="color:white;"></i> Sign in with Google+</span> </button>
             </div>
           
             <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
@@ -596,14 +596,14 @@ const makeCasesHtml = (cases, kind, htmlCase, state) => {
 };
 //edit 4/7
 const personCase = `
-<div class="card" style="width:20vw">
+<div class="card g-col-6 g-col-md-4" >
 
 <div class="card-body">
     <h4  class="card-title">@Name@</h4>
     <p class="card-text">@Circumstances@</p>
     
     <div class="img-contian">
-    <img class="card-img-top " src="@Photo@" alt="Card image" style="width:100%;height:300px;">  
+    <img class="card-img-top " src="@Photo@" alt="Card image" style="width:300px;height:300px;">  
     <a  href="/case-info.html?id=@ID@&kind=@State@"  class="btn btn-primary mb-2 eye-link" >  <i class="fa-solid fa-eye"></i></a >
     <a  href="https://www.google.com/maps/@@Land@,@Lang@,21z"  class="btn btn-primary mb-2 location-link" >  <i class="fa-solid fa-location-dot"></i> </a >
 
@@ -621,14 +621,14 @@ const personCase = `
 
 //edit 4/7
 const thingCase = `
-<div class="card" style="width:20vw">
+<div class="card g-col-6 g-col-md-4" >
 
 <div class="card-body">
     <h4  class="card-title">@Name@</h4>
     <p class="card-text">@Description@</p>
     
     <div class="img-contian">
-    <img class="card-img-top " src="@Photo@" alt="Card image" style="width:100%;height:300px;">  
+    <img class="card-img-top " src="@Photo@" alt="Card image" style="width:300px;height:300px;">  
     <a  href="/case-info.html?id=@ID@&kind=thing"  class="btn btn-primary mb-2 eye-link" >  <i class="fa-solid fa-eye"></i></a >
     <a  href="https://www.google.com/maps/@@Land@,@Lang@,21z"  class="btn btn-primary mb-2 location-link" >  <i class="fa-solid fa-location-dot"></i> </a >
     </div>

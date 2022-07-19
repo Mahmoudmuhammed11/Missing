@@ -715,6 +715,16 @@ footer {
   
   width: 100%;
 }
+@media (max-width: 900px) { 
+  
+  footer{
+    position: fixed !important;
+    bottom: 0;
+    width: 100%;
+
+  }
+}
+
 
 /*==============End Footer=============*/
 
